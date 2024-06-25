@@ -1,0 +1,42 @@
+{
+    "Apache": {
+        "badge": "https://img.shields.io/badge/License-Apache%202.0-blue.svg",
+        "url": "https://opensource.org/licenses/Apache-2.0"
+    },
+    "GNU 2.0": {
+        "badge": "https://img.shields.io/badge/License-GPL%20v2-blue.svg",
+        "url": "https://opensource.org/licenses/GPL-2.0"
+    },
+    "GNU 3.0": {
+        "badge": "https://img.shields.io/badge/License-GPL%20v3-blue.svg",
+        "url": "https://opensource.org/licenses/GPL-3.0"
+    },
+    "MIT": {
+        "badge": "https://img.shields.io/badge/License-MIT-blue.svg",
+        "url": "https://opensource.org/licenses/MIT"
+    },
+    "BSD 2-clause": {
+        "badge": "https://img.shields.io/badge/License-BSD%202--Clause-blue.svg",
+        "url": "https://opensource.org/licenses/BSD-2-Clause"
+    },
+    "BSD 3-clause": {
+        "badge": "https://img.shields.io/badge/License-BSD%203--Clause-blue.svg",
+        "url": "https://opensource.org/licenses/BSD-3-Clause"
+    },
+    "Mozilla": {
+        "badge": "https://img.shields.io/badge/License-MPL%202.0-blue.svg",
+        "url": "https://opensource.org/licenses/MPL-2.0"
+    },
+    "EPL 1.0": {
+        "badge": "https://img.shields.io/badge/License-EPL%201.0-blue.svg",
+        "url": "https://opensource.org/licenses/EPL-1.0"
+    },
+    "EPL 2.0": {
+        "badge": "https://img.shields.io/badge/License-EPL%202.0-blue.svg",
+        "url": "https://opensource.org/licenses/EPL-2.0"
+    },
+    "Creative Commons": {
+        "badge": "https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+}
