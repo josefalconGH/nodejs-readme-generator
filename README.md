@@ -6,6 +6,7 @@ Description...
 
 ```md
 nodejs-readme-generator
+├── dist
 ├── node_modules
 ├── utils
 │   ├── commonLicenses.json

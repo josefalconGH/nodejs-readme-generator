@@ -1,37 +1,27 @@
-import { readFileSync } from 'fs';
-const licenses = JSON.parse(readFileSync('./utils/common-licenses.json', 'utf8'));
-
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (licenses[license]) {
-    return licenses[license].badge;
-  }
-  else {
-    return '';
-  }
+  let badgeLabel = license.replace(" ", "%20");
+  return `[![Generic badge](https://img.shields.io/badge/License-${badgeLabel}-green.svg)](${renderLicenseLink(license)})`
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if (licenses[license]) {
-    return licenses[license].url;
-  }
-  else {
-    return '';
-  }
+  let linkUrl = license.toLowerCase().replace(" ", "-");
+  return `https://choosealicense.com/licenses/${linkUrl}/.`
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if (licenses[license]) {
-    return `This project is licensed under the ${license} license.`;
-  }
-  else {
-    return '';
-  }
+  if (license === "None") {
+    return "";
+  } else {
+    return `
+    This project is licensed under the ${license} license.
+    `;
+}
 }
 
 // renderDemo function 
@@ -58,7 +48,7 @@ function generateMarkdown(data) {
   - [Usage](#usage)
   - [Tests](#tests)
   - [License](#license)
-  - [Contributing](#contributing)
+  - [Contribution](#contribution)
   - [Questions](#questions)
 
   ## Description
@@ -79,11 +69,11 @@ function generateMarkdown(data) {
   ${renderLicenseSection(license)}
   ${renderLicenseLink(license)}
 
-  ## Contributing
-  ${info.contributing}
+  ## Contribution
+  ${info.contribution}
 
   ## Questions
-  Reach out to me with additional questions! [${github}](https://github.com/${github}) at ${info.email}
+  Reach out to me with additional questions! [${github}](https://github.com/${github}) or at my email: ${info.email}
   `;
 }
 
