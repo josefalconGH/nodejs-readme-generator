@@ -39,6 +39,10 @@ The `nodejs-readme-generator` can be viewed at: https://github.com/josefalconGH/
 
 ![*Command-Line-Run-Through*](./assets/challenge-09-demo.gif)
 
+### Generated README
+
+![*Generated-README*](./assets/demo-readme.png)
+
 ## Learning Outcomes
 
 - Understanding of Node.js and npm package management
