@@ -37,7 +37,7 @@ The `nodejs-readme-generator` can be viewed at: https://github.com/josefalconGH/
 
 ### Demo
 
-![*Command-Line-Run-Through*](*image location*)
+![*Command-Line-Run-Through*](./assets/challenge-09-demo.gif)
 
 ## Learning Outcomes
 
