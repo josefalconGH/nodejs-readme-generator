@@ -6,12 +6,13 @@ Description...
 
 ```md
 nodejs-readme-generator
+├── node_modules
 ├── utils
+│   ├── common-licenses.json
 │   └── generateMarkdown.js
 ├── index.js
 ├── package-lock.json
-├── package.json
-└── README.md
+└── package.json
 ```
 
 ## Features
