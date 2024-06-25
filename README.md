@@ -4,6 +4,8 @@
 
 The `nodejs-readme-generator` is a command-line application designed to quickly generate personalized professional README files. Utilizing Node.js and the Inquirer package, it prompts the user for input and creates a structured README based on the responses.
 
+The README file generated in the demo is located in the `dist` directory.
+
 ```md
 nodejs-readme-generator
 ├── dist
