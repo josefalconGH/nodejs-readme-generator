@@ -49,42 +49,41 @@ function formatAsOrderedList(input) {
 function generateMarkdown(data) {
   const {github, license, demo, ...info} = data;
 
-  return `
-  # ${info.title}
+  return `# ${info.title}
 
-  ## Table of Contents
-  - [Description](#description)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Tests](#tests)
-  - [License](#license)
-  - [Contribution](#contribution)
-  - [Questions](#questions)
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Tests](#tests)
+- [License](#license)
+- [Contribution](#contribution)
+- [Questions](#questions)
 
-  ## Description
-  ${info.description}
-  ${renderDemo(demo)}
+## Description
+${info.description}
+${renderDemo(demo)}
 
-  ## Installation
-  ${formatAsOrderedList(info.installation)}
+## Installation
+${formatAsOrderedList(info.installation)}
 
-  ## Usage
-  ${formatAsUnorderedList(info.usage)}
+## Usage
+${formatAsUnorderedList(info.usage)}
 
-  ## Tests
-  ${formatAsUnorderedList(info.tests)}
+## Tests
+${formatAsUnorderedList(info.tests)}
 
-  ## License
-  ${renderLicenseBadge(license)}
-  ${renderLicenseSection(license)}
-  ${renderLicenseLink(license)}
+## License
+${renderLicenseBadge(license)}
+${renderLicenseSection(license)}
+${renderLicenseLink(license)}
 
-  ## Contribution
-  ${formatAsOrderedList(info.contribution)}
+## Contribution
+${formatAsOrderedList(info.contribution)}
 
-  ## Questions
-  Reach out to me with additional questions! [${github}](https://github.com/${github}) or at my email: ${info.email}
-  `;
+## Questions
+Reach out to me with additional questions! [${github}](https://github.com/${github}) or at my email: ${info.email}
+`;
 }
 
 module.exports = generateMarkdown;

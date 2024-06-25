@@ -33,7 +33,7 @@ MIT License
 
 ## Mock-Up
 
-The `nodejs-readme-generator` can be viewed at: https://josefalcongh.github.io/
+The `nodejs-readme-generator` can be viewed at: https://github.com/josefalconGH/nodejs-readme-generator
 
 ### Demo
 
