@@ -8,7 +8,7 @@ Description...
 nodejs-readme-generator
 ├── node_modules
 ├── utils
-│   ├── common-licenses.json
+│   ├── commonLicenses.json
 │   └── generateMarkdown.js
 ├── index.js
 ├── package-lock.json
