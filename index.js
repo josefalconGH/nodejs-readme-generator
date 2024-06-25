@@ -40,13 +40,13 @@ const questions = [
     {
         type: 'confirm',
         name: 'confirmDemo',
-        message: 'Would you like to include a link to a demo?',
+        message: 'Would you like to include a link/gif to/of a demo?',
         default: false
     },
     {
         type: 'input',
         name: 'demo',
-        message: 'Please provide a link to the demo:',
+        message: 'Please provide a link/gif to/of the demo:',
         when: ({ confirmDemo }) => confirmDemo,
         validate: demoInput => {
             if (demoInput) {
@@ -62,7 +62,7 @@ const questions = [
     {
         type: 'input',
         name: 'installation',
-        message: 'Please provide installation instructions for your project:',
+        message: 'Please provide installation instructions for your project (separate each step with a comma):',
         validate: installationInput => {
             if (installationInput) {
                 return true;
@@ -77,7 +77,7 @@ const questions = [
     {
         type: 'input',
         name: 'usage',
-        message: 'Please provide usage information for your project:',
+        message: 'Please provide usage information for your project (separate each step with a comma):',
         validate: usageInput => {
             if (usageInput) {
                 return true;
@@ -92,7 +92,7 @@ const questions = [
     {
         type: 'input',
         name: 'tests',
-        message: 'Please provide test instructions for your project:',
+        message: 'Please provide test instructions for your project (separate each step with a comma):',
         validate: testsInput => {
             if (testsInput) {
                 return true;
@@ -114,8 +114,8 @@ const questions = [
     // Contribution prompt
     {
         type: 'input',
-        name: 'contributon',
-        message: 'Please provide contribution guidelines for your project:',
+        name: 'contribution',
+        message: 'Please provide contribution guidelines for your project (separate each step with a comma):',
         validate: contributionInput => {
             if (contributionInput) {
                 return true;

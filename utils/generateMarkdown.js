@@ -35,6 +35,16 @@ function renderDemo(demo) {
   }
 }
 
+// formatAsUnorderedList function
+function formatAsUnorderedList(input) {
+  return input.split(',').map(item => `- ${item.trim()}`).join('\n');
+}
+
+// formatAsOrderedList function
+function formatAsOrderedList(input) {
+  return input.split(',').map((item, index) => `${index + 1}. ${item.trim()}`).join('\n');
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   const {github, license, demo, ...info} = data;
@@ -56,13 +66,13 @@ function generateMarkdown(data) {
   ${renderDemo(demo)}
 
   ## Installation
-  ${info.installation}
+  ${formatAsOrderedList(info.installation)}
 
   ## Usage
-  ${info.usage}
+  ${formatAsUnorderedList(info.usage)}
 
   ## Tests
-  ${info.tests}
+  ${formatAsUnorderedList(info.tests)}
 
   ## License
   ${renderLicenseBadge(license)}
@@ -70,7 +80,7 @@ function generateMarkdown(data) {
   ${renderLicenseLink(license)}
 
   ## Contribution
-  ${info.contribution}
+  ${formatAsOrderedList(info.contribution)}
 
   ## Questions
   Reach out to me with additional questions! [${github}](https://github.com/${github}) or at my email: ${info.email}
